@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "ca.simonho.sensorrecord"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "0.1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:23.1.1'
+    implementation 'com.android.support:design:23.1.1'
+    implementation 'com.android.support:support-v4:23.1.1'
+    implementation 'com.androidplot:androidplot-core:0.6.1'
+    compile files('libs/opencsv-2.1-1.0.0.jar')
+}

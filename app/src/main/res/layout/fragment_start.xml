@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/start_layout_padding"
+    android:background="@drawable/bg_color2"
+    tools:context="ca.sarvajit.sensorrecord.StartFragment">
+
+    <TextView
+        android:id="@+id/start_label_subNum"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/start_element_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:layout_marginRight="@dimen/start_label_margin_right"
+        android:gravity="center_vertical"
+        android:text="@string/start_label_subNum"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/start_value_subNum"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/start_element_height"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/start_label_subNum"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="8dp"
+        android:text="@string/start_button_label_start" />
+
+    <TextView
+        android:id="@+id/start_recording_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/start_element_height"
+        android:layout_below="@id/startButton"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

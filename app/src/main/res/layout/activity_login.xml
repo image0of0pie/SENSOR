@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color2"
+    android:fitsSystemWindows="true"
+    tools:context="ca.sarvajit.sensorrecord.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_color2"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp">
+
+
+        <!-- Username Label -->
+        <EditText
+            android:id="@+id/input_user"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_color"
+            android:hint="Enter Login Id"
+            android:inputType="text"
+            android:textColor="#00BCD4"
+            android:textColorHint="#00BCD4" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp">
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/bg_color"
+            android:onClick="authenticateUser"
+            android:padding="12dp"
+            android:text="Record sensor data"
+            android:textColor="#00BCD4" />
+
+        <Button
+            android:id="@+id/uploader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_color"
+            android:text="Upload to database"
+            android:textColor="#00BCD4" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_color"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/new_bg"
+                    android:text="@string/Instructions" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

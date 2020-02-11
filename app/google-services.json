@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "442178787098",
+    "firebase_url": "https://sensordata-cc692.firebaseio.com",
+    "project_id": "sensordata-cc692",
+    "storage_bucket": "sensordata-cc692.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442178787098:android:e2ce1b246c675f2d5bfea3",
+        "android_client_info": {
+          "package_name": "ca.simonho.sensorrecord"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442178787098-g69b0vg4supnlsl06tige22fti8s13tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ca.simonho.sensorrecord",
+            "certificate_hash": "1ac4f711ec9bedafb1f0613c12cb1a3ee5242a63"
+          }
+        },
+        {
+          "client_id": "442178787098-j3h2qhhi2nln16dtdrbtsdjn3alvv7nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-bYZrx4xVyVgQVn8vQ9UXpc-kDaha-0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442178787098-j3h2qhhi2nln16dtdrbtsdjn3alvv7nu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

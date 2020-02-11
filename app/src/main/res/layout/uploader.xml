@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color2">
+
+    <Button
+        android:id="@+id/selector"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploader"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="55dp"
+        android:text="Selector" />
+
+    <Button
+        android:id="@+id/uploader"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="490dp"
+        android:text="Uploader" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="348dp"
+        android:layout_height="407dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="66dp"
+        android:src="@drawable/common_google_signin_btn_icon_dark_focused" />
+</RelativeLayout>
